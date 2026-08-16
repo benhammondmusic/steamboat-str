@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# steamboat-str
 
-## Getting Started
+Marketing site for a short term rental at 2525 Cattle Kate Circle, Steamboat Springs, CO.
 
-First, run the development server:
+Built with Next.js (App Router), TypeScript, and Tailwind v4. Deploys to Netlify.
+
+## Develop
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev      # http://localhost:3000
+npm run build    # production build
+npm run lint
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Filling in the real content
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Two places, no component edits needed.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+**Listing facts** live in `src/data/property.ts`. Anything still set to `TODO`
+renders as a loud amber badge on the page, so unfilled fields are obvious in
+review rather than silently shipping as blanks. Fill in at minimum:
 
-## Learn More
+- `specs` (bedrooms, bathrooms, sleeps, square feet, floor)
+- `booking` (at least one of the Airbnb / Vrbo / direct URLs, plus email and phone)
+- `rates` (nightly floors and minimum stay)
 
-To learn more about Next.js, take a look at the following resources:
+The amenities list, drive times, and marketing copy in that file are drafted from
+general Steamboat knowledge and should be checked against reality before launch.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**Photos** live in `public/images`. The gallery reads filenames from the `gallery`
+array in `property.ts`, so replacing a placeholder is just dropping a real photo at
+the same path. To regenerate the placeholder art:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+npm run placeholders
+```
 
-## Deploy on Vercel
+## Deploy
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Netlify picks up `netlify.toml` and the Next.js runtime plugin. Connect the repo in
+the Netlify dashboard, no build settings to configure by hand.
