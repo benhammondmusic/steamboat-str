@@ -15,7 +15,7 @@ const fraunces = Fraunces({
 
 const title = `${property.name} | ${property.tagline}`;
 const description =
-  "A Steamboat Springs condo built for ski trips and Front Range long weekends. Minutes to the gondola, full kitchen, hot tub, and heated ski storage.";
+  "Top-floor 2 bedroom condo at Wildhorse Meadows in Steamboat Springs. Private gondola to the ski base across the street, heated pool and three hot tubs, AC, and in-unit laundry. Sleeps 6.";
 
 export const metadata: Metadata = {
   title,

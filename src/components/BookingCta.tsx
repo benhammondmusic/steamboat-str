@@ -2,9 +2,9 @@ import { property } from "@/data/property";
 import { Todo, isTodo } from "./Todo";
 
 const channels = [
+  { key: "itrip", label: "Check dates and book" },
   { key: "airbnb", label: "Book on Airbnb" },
   { key: "vrbo", label: "Book on Vrbo" },
-  { key: "direct", label: "Book direct" },
 ] as const;
 
 export function BookingCta() {
@@ -20,16 +20,21 @@ export function BookingCta() {
         <p className="mt-4 max-w-2xl text-lg text-snow-200">{rates.note}</p>
 
         <div className="mt-8 flex flex-wrap items-center gap-3">
-          {live.map((channel) => (
+          {live.map((channel, index) => (
             <a
               key={channel.key}
               href={booking[channel.key]}
-              className="rounded-full bg-aspen-400 px-6 py-3 font-semibold text-pine-900 transition hover:bg-aspen-100"
+              target="_blank"
+              rel="noreferrer"
+              className={
+                index === 0
+                  ? "rounded-full bg-aspen-400 px-6 py-3 font-semibold text-pine-900 transition hover:bg-aspen-100"
+                  : "rounded-full px-6 py-3 font-semibold ring-1 ring-snow-50/40 transition hover:bg-snow-50/10"
+              }
             >
               {channel.label}
             </a>
           ))}
-          {live.length === 0 ? <Todo label="add at least one booking link" /> : null}
         </div>
 
         <div className="mt-8 space-y-2 text-snow-200">
@@ -38,10 +43,7 @@ export function BookingCta() {
             {isTodo(booking.email) ? (
               <Todo label="contact email" />
             ) : (
-              <a
-                className="underline underline-offset-4"
-                href={`mailto:${booking.email}`}
-              >
+              <a className="underline underline-offset-4" href={`mailto:${booking.email}`}>
                 {booking.email}
               </a>
             )}

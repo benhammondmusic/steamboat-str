@@ -6,12 +6,12 @@ export function Amenities() {
     <Section
       id="amenities"
       eyebrow="What is here"
-      title="Stocked for a week, easy for a weekend"
-      intro="Everything below is a placeholder list. Trim it to what the unit actually has before you publish."
+      title="Turnkey in the unit, resort amenities across the street"
+      intro="The pool, hot tubs, gym, and game room belong to Trailhead Lodge directly across the street, and guests here have access."
     >
-      <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
         {amenities.map((group) => (
-          <div key={group.category}>
+          <div key={group.category} className="rounded-xl bg-white p-6 ring-1 ring-snow-200">
             <h3 className="font-display text-lg font-semibold text-pine-700">{group.category}</h3>
             <ul className="mt-4 space-y-2 text-ink/80">
               {group.items.map((item) => (
@@ -29,11 +29,10 @@ export function Amenities() {
       </div>
 
       <div className="mt-14 rounded-xl bg-pine-50 p-6 ring-1 ring-pine-200">
-        <h3 className="font-display text-xl font-semibold text-pine-700">
-          Not just a winter town
-        </h3>
+        <h3 className="font-display text-xl font-semibold text-pine-700">Not just a winter town</h3>
         <p className="mt-2 text-ink/70">
-          Summer rates run lower and the valley is wide open.
+          Summer rates run lower and the pool is heated year round. Note that the gondola and the
+          neighborhood shuttle run in ski season only.
         </p>
         <ul className="mt-5 grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
           {summerHighlights.map((item) => (

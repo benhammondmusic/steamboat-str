@@ -1,94 +1,111 @@
 /**
  * Every listing fact the site renders lives here.
  *
- * Values marked TODO are placeholders. Zillow blocks automated fetching, so the
- * unit specifics could not be pulled from the listing and must be filled in by hand.
+ * Sourced from the iTrip listing and the MLS/Zillow record for unit 4306.
+ * Anything still set to TODO renders as an amber badge on the page.
  */
 
 export const TODO = "TODO" as const;
 
 export const property = {
-  name: "Cattle Kate Retreat",
-  tagline: "Steamboat Springs slopeside condo",
+  name: "First Tracks 4306",
+  tagline: "Top-floor 2 bedroom at Wildhorse Meadows, Steamboat Springs",
   address: {
     street: "2525 Cattle Kate Circle",
     unit: "Unit 4306",
     city: "Steamboat Springs",
     state: "CO",
     zip: "80487",
+    subdivision: "Wildhorse Meadows / First Tracks",
   },
-  // TODO: confirm all specs against the deed / listing before publishing
   specs: {
-    bedrooms: TODO,
-    bathrooms: TODO,
-    sleeps: TODO,
-    squareFeet: TODO,
+    bedrooms: "2",
+    bathrooms: "2",
+    sleeps: "6",
+    squareFeet: "1,022",
     propertyType: "Condominium",
-    floor: TODO,
+    floor: "Top floor",
+    yearBuilt: "2009",
+    furnished: "Fully furnished",
   },
+  /** Colorado STR permit. Required on advertising in most Routt County jurisdictions. */
+  licenseNumber: "LCSTR20232545",
   booking: {
-    // TODO: swap in real booking URLs, or delete the ones you do not use
+    itrip:
+      "https://www.itrip.net/steamboat-springs-vacation-rental/first-tracks-4306-at-wildhorse-meadows",
     airbnb: TODO,
     vrbo: TODO,
-    direct: TODO,
     email: TODO,
     phone: TODO,
   },
   rates: {
-    // TODO: confirm rates and minimum stays
-    note: "Rates vary by season. Reach out for an exact quote on your dates.",
+    note: "Rates move with the season and the snow. Check live availability and pricing on the booking page.",
     winterNightlyFrom: TODO,
     summerNightlyFrom: TODO,
     minimumStayNights: TODO,
   },
 } as const;
 
+/** Sleeps 6 by permit, though there are more beds than that. */
+export const sleeping = [
+  {
+    room: "Primary bedroom",
+    beds: "King bed",
+    note: "En suite bathroom with combo tub and shower. Portable AC unit.",
+  },
+  {
+    room: "Second bedroom",
+    beds: "Twin XL over queen bunk, plus a twin XL bunk",
+    note: "Bathroom is across the hall, not attached. Portable AC unit.",
+  },
+  {
+    room: "Living area",
+    beds: "Queen sleeper sofa",
+    note: "Opens onto the private deck.",
+  },
+] as const;
+
 export const amenities = [
   {
-    category: "After the mountain",
+    category: "In the condo",
     items: [
-      "Private hot tub access",
-      "Gas fireplace in the living room",
-      "Heated ski and boot storage",
-      "In-unit washer and dryer",
+      "Full kitchen with stainless appliances and quartz counters",
+      "Washer and dryer in unit",
+      "Portable AC units in both bedrooms",
+      "High-speed WiFi and streaming on a flat-screen TV",
+      "Desk and remote work station",
+      "Private deck with Yampa Valley and Flat Tops views",
+      "Hardwood floors, fully furnished, turnkey",
     ],
   },
   {
-    category: "Kitchen and dining",
+    category: "Across the street at Trailhead Lodge",
     items: [
-      "Full kitchen with full-size appliances",
-      "Coffee maker and grinder",
-      "Dishwasher",
-      "Seating for the whole group",
+      "Large heated pool, open year round",
+      "Three rocky-mountain-style hot tubs",
+      "Fitness center",
+      "Game room with pool table and foosball",
+      "Community grills and fire pit",
     ],
   },
   {
-    category: "Working and unwinding",
+    category: "Getting to the mountain",
     items: [
-      "Fast Wi-Fi",
-      "Smart TV with streaming",
-      "Dedicated workspace",
-      "Board games and books",
-    ],
-  },
-  {
-    category: "Logistics",
-    items: [
-      "Free on-site parking",
-      "Elevator access",
-      "Self check-in with keypad",
-      "Pack-n-play and high chair on request",
+      "Private Wildhorse gondola across the street, winter season only",
+      "Free neighborhood shuttle, winter season only",
+      "Oversized private storage for skis and gear",
+      "One assigned parking space",
     ],
   },
 ] as const;
 
-/** Approximate driving distances. Confirm before publishing. */
+/** Approximate driving distances. */
 export const distances = [
   {
     from: "Denver",
     miles: 157,
     driveTime: "about 3 hours",
-    note: "Straight up I-70 and US-40 over Rabbit Ears Pass.",
+    note: "I-70 to US-40 over Rabbit Ears Pass. Give yourself extra in a storm.",
   },
   {
     from: "Fort Collins",
@@ -106,6 +123,10 @@ export const distances = [
 
 export const skiHighlights = [
   {
+    title: "The gondola is across the street",
+    body: "Wildhorse Meadows has its own private gondola running through ski season, and it drops you at the Steamboat base area. No shuttle roulette, no parking lot hike in ski boots.",
+  },
+  {
     title: "Champagne Powder",
     body: "Steamboat trademarked the term for a reason. The dry, light snow that falls here skis differently than anywhere else in Colorado.",
   },
@@ -114,12 +135,8 @@ export const skiHighlights = [
     body: "Roughly 3,000 acres across six peaks, from wide beginner greens off the gondola to the aspen glades locals guard closely.",
   },
   {
-    title: "Ski days that start easy",
-    body: "Boots dry overnight in heated storage, gear stays downstairs, and you are moving toward the lift while other groups are still loading the car.",
-  },
-  {
-    title: "Soak it off after",
-    body: "Old Town Hot Springs sits in the middle of downtown, and Strawberry Park Hot Springs is a short drive up the valley for the full soak-under-the-stars version.",
+    title: "Three hot tubs and a heated pool",
+    body: "Trailhead Lodge is directly across the street. Soak with mountain views, then let the kids burn off whatever is left in the game room.",
   },
 ] as const;
 
@@ -129,11 +146,11 @@ export const frontRangeWeekend = {
   itinerary: [
     {
       when: "Friday evening",
-      what: "Leave after school or after work, roll in for a late dinner, unpack once.",
+      what: "Leave after school or after work, check in any time after 4pm, unpack once.",
     },
     {
       when: "Saturday",
-      what: "First chair, lunch on the mountain, then the hot tub while the kids keep lapping the terrain park.",
+      what: "Gondola across the street to first chair, lunch on the mountain, then the hot tubs at Trailhead while the kids take over the game room.",
     },
     {
       when: "Sunday",
@@ -141,10 +158,11 @@ export const frontRangeWeekend = {
     },
   ],
   familyNotes: [
-    "Kids' gear rental and ski school are minutes away, not a shuttle ride away.",
-    "Full kitchen means breakfast happens at the condo instead of a $90 restaurant stop.",
-    "Bunk-friendly sleeping setup so cousins and friends can pile in.",
-    "Summer works too: Yampa River tubing, the bike park, and Fish Creek Falls.",
+    "A real bunk room: twin XL over queen plus a twin XL bunk, so the kids get their own space.",
+    "Full kitchen means breakfast happens here instead of a $90 restaurant stop.",
+    "Washer and dryer in the unit, so one set of ski clothes is enough.",
+    "Top floor with no one stomping overhead at 6am.",
+    "Summer works too, and the pool is heated year round.",
   ],
 } as const;
 
@@ -154,7 +172,18 @@ export const summerHighlights = [
   "The hike to Fish Creek Falls",
   "Saturday farmers market on Lincoln Avenue",
   "Steamboat Pro Rodeo on summer weekends",
-  "Alpine slide and gondola scenic rides",
+  "Strawberry Park Hot Springs up the valley",
+] as const;
+
+export const houseRules = [
+  { rule: "Check in", detail: "After 4:00 PM" },
+  { rule: "Check out", detail: "Before 10:00 AM" },
+  { rule: "Pets", detail: "Not allowed" },
+  { rule: "Smoking", detail: "Not allowed anywhere in the unit" },
+  { rule: "Parties", detail: "No parties or loud noise" },
+  { rule: "Open flames", detail: "No candles in the unit or on the balcony" },
+  { rule: "Minimum age", detail: "One member of the party must be 25 or older" },
+  { rule: "Housekeeping", detail: "No daily maid service, available for a fee" },
 ] as const;
 
 /**
@@ -162,17 +191,17 @@ export const summerHighlights = [
  * and the site picks them up with no code changes.
  */
 export const gallery = [
-  { src: "/images/placeholder-exterior.svg", alt: "Exterior of the building in winter" },
-  { src: "/images/placeholder-living.svg", alt: "Living room with fireplace" },
-  { src: "/images/placeholder-kitchen.svg", alt: "Full kitchen and dining area" },
-  { src: "/images/placeholder-bedroom.svg", alt: "Primary bedroom" },
-  { src: "/images/placeholder-bunks.svg", alt: "Bunk room for kids" },
-  { src: "/images/placeholder-hottub.svg", alt: "Hot tub at dusk" },
-  { src: "/images/placeholder-slopes.svg", alt: "Steamboat ski runs on a bluebird day" },
-  { src: "/images/placeholder-downtown.svg", alt: "Downtown Steamboat Springs on Lincoln Avenue" },
+  { src: "/images/placeholder-living.svg", alt: "Living area with sofa and club chairs" },
+  { src: "/images/placeholder-kitchen.svg", alt: "Modern kitchen with quartz counters" },
+  { src: "/images/placeholder-bedroom.svg", alt: "Primary bedroom with king bed" },
+  { src: "/images/placeholder-bunks.svg", alt: "Second bedroom with bunk beds" },
+  { src: "/images/placeholder-deck.svg", alt: "Private deck with valley views" },
+  { src: "/images/placeholder-pool.svg", alt: "Heated pool and hot tubs at Trailhead Lodge" },
+  { src: "/images/placeholder-gondola.svg", alt: "Private Wildhorse gondola across the street" },
+  { src: "/images/placeholder-exterior.svg", alt: "First Tracks building exterior in winter" },
 ] as const;
 
 export const heroImage = {
   src: "/images/placeholder-hero.svg",
-  alt: "Snowy view of Steamboat Springs from the condo",
+  alt: "Steamboat Springs in winter",
 } as const;

@@ -1,5 +1,4 @@
 import { amenities, property } from "@/data/property";
-import { isTodo } from "./Todo";
 
 export function StructuredData() {
   const { address, specs } = property;
@@ -9,6 +8,7 @@ export function StructuredData() {
     "@type": "LodgingBusiness",
     name: property.name,
     description: property.tagline,
+    url: property.booking.itrip,
     address: {
       "@type": "PostalAddress",
       streetAddress: `${address.street} ${address.unit}`,
@@ -17,11 +17,19 @@ export function StructuredData() {
       postalCode: address.zip,
       addressCountry: "US",
     },
+    numberOfRooms: Number(specs.bedrooms),
+    maximumAttendeeCapacity: Number(specs.sleeps),
+    petsAllowed: false,
+    smokingAllowed: false,
+    checkinTime: "16:00",
+    checkoutTime: "10:00",
     amenityFeature: amenities.flatMap((group) =>
-      group.items.map((item) => ({ "@type": "LocationFeatureSpecification", name: item })),
+      group.items.map((item) => ({
+        "@type": "LocationFeatureSpecification",
+        name: item,
+        value: true,
+      })),
     ),
-    ...(isTodo(specs.sleeps) ? {} : { maximumAttendeeCapacity: Number(specs.sleeps) }),
-    ...(isTodo(specs.bedrooms) ? {} : { numberOfRooms: Number(specs.bedrooms) }),
   };
 
   return (

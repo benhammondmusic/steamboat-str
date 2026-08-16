@@ -2,6 +2,7 @@ import { property } from "@/data/property";
 
 const links = [
   { href: "#gallery", label: "Photos" },
+  { href: "#sleeping", label: "Sleeping" },
   { href: "#ski", label: "Ski trips" },
   { href: "#weekend", label: "Long weekends" },
   { href: "#amenities", label: "Amenities" },

@@ -17,10 +17,10 @@ const images = [
   { name: "living", label: "Living room", width: 1200, height: 900 },
   { name: "kitchen", label: "Kitchen and dining", width: 1200, height: 900 },
   { name: "bedroom", label: "Primary bedroom", width: 1200, height: 900 },
-  { name: "bunks", label: "Bunk room", width: 1200, height: 900 },
-  { name: "hottub", label: "Hot tub at dusk", width: 1200, height: 900 },
-  { name: "slopes", label: "On the mountain", width: 1200, height: 900 },
-  { name: "downtown", label: "Downtown Steamboat", width: 1200, height: 900 },
+  { name: "bunks", label: "Second bedroom bunks", width: 1200, height: 900 },
+  { name: "deck", label: "Private deck and view", width: 1200, height: 900 },
+  { name: "pool", label: "Pool and hot tubs", width: 1200, height: 900 },
+  { name: "gondola", label: "Wildhorse gondola", width: 1200, height: 900 },
 ];
 
 function ridge(width, height) {

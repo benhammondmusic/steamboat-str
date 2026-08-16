@@ -17,16 +17,18 @@ npm run lint
 
 Two places, no component edits needed.
 
-**Listing facts** live in `src/data/property.ts`. Anything still set to `TODO`
-renders as a loud amber badge on the page, so unfilled fields are obvious in
-review rather than silently shipping as blanks. Fill in at minimum:
+**Listing facts** live in `src/data/property.ts`, sourced from the iTrip listing and
+the MLS record for unit 4306. Anything still set to `TODO` renders as a loud amber
+badge on the page, so unfilled fields are obvious in review rather than silently
+shipping as blanks. Still open:
 
-- `specs` (bedrooms, bathrooms, sleeps, square feet, floor)
-- `booking` (at least one of the Airbnb / Vrbo / direct URLs, plus email and phone)
+- `booking.airbnb` and `booking.vrbo` (iTrip is wired up already)
+- `booking.email` and `booking.phone`
 - `rates` (nightly floors and minimum stay)
 
-The amenities list, drive times, and marketing copy in that file are drafted from
-general Steamboat knowledge and should be checked against reality before launch.
+Drive times are approximate. The Steamboat area copy (skiable acreage, summer
+activities) is general knowledge rather than listing fact, so give it a read before
+launch.
 
 **Photos** live in `public/images`. The gallery reads filenames from the `gallery`
 array in `property.ts`, so replacing a placeholder is just dropping a real photo at
