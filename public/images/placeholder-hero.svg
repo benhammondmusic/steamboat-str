@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-label="Hero photo placeholder">
+  <defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#3f7a5e"/><stop offset="100%" stop-color="#23503d"/></linearGradient></defs>
+  <rect width="1600" height="900" fill="url(#sky)"/>
+  <polygon points="0.0,702.0 256.0,396.0 448.0,522.0 704.0,234.0 960.0,495.0 1184.0,324.0 1408.0,540.0 1600.0,432.0 1600.0,900.0 0.0,900.0" fill="#ffffff" opacity="0.14"/>
+  <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" font-family="system-ui, sans-serif" font-size="62" font-weight="600" fill="#ffffff" opacity="0.92">Hero photo</text>
+  <text x="50%" y="536.8" text-anchor="middle" dominant-baseline="middle" font-family="system-ui, sans-serif" font-size="31" fill="#ffffff" opacity="0.6">replace with a real photo</text>
+</svg>
