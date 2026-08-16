@@ -33,7 +33,7 @@ export const property = {
   booking: {
     itrip:
       "https://www.itrip.net/steamboat-springs-vacation-rental/first-tracks-4306-at-wildhorse-meadows",
-    airbnb: TODO,
+    airbnb: "https://www.airbnb.com/rooms/937781387600503303",
     vrbo: TODO,
     email: TODO,
     phone: TODO,
