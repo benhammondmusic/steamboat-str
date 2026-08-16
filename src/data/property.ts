@@ -175,7 +175,9 @@ export const seasons = [
     season: "Winter",
     window: "Late November through early April",
     picks: [
-      { text: "Ski Steamboat, with the neighborhood gondola across the street" },
+      {
+        text: "Ski Steamboat, with the neighborhood gondola across the street, and night skiing when you want a late lap",
+      },
       {
         text: "Winter Carnival in February, when they close Lincoln Avenue for the street events, including skiers pulled along behind horses",
         tag: "offbeat",
