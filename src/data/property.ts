@@ -178,6 +178,17 @@ export const yearRound = [
   { text: "Live music on the big stage at the mountain base" },
 ] as const;
 
+/** Riding the resort gondola up the mountain, which is separate from the neighborhood one. */
+export const gondolaActivities = {
+  heading: "Up the resort gondola",
+  note: "Each of these needs a lift ticket or a season pass.",
+  items: [
+    "Summer sunset happy hour up top, with live music, food and drinks",
+    "Hiking, snowshoeing and cross-country trails, well beyond downhill runs",
+    "Mountain biking, with limited bike park access included on the Ikon pass",
+  ],
+} as const;
+
 /**
  * Five picks per season, deliberately mixing the obvious with the offbeat.
  * Verify event names and timing against the current year before publishing.
