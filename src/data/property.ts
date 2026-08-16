@@ -177,11 +177,11 @@ export const seasons = [
     picks: [
       { text: "Ski Steamboat, with the neighborhood gondola across the street" },
       {
-        text: "Winter Carnival in February, when they close Lincoln Avenue and tow skiers down Main Street behind horses",
+        text: "Winter Carnival in February, when they close Lincoln Avenue for the street events, including skiers pulled along behind horses",
         tag: "offbeat",
       },
       {
-        text: "Night skiing and tubing at Howelsen Hill, the oldest ski area in Colorado",
+        text: "Snow tubing and skiing at Howelsen Hill, Colorado's oldest continuously operating ski area, with free skiing on Sundays",
         tag: "kids",
       },
       { text: "Old Town Hot Springs downtown, with waterslides", tag: "kids" },
@@ -199,7 +199,7 @@ export const seasons = [
       },
       { text: "Fish Creek Falls running hard on snowmelt" },
       { text: "The Yampa comes up and the kayakers take over the river park" },
-      { text: "Mud season quiet, the lowest rates, and no lift lines anywhere" },
+      { text: "Mud season quiet, with lower rates and shorter lift lines" },
     ],
   },
   {
@@ -211,7 +211,7 @@ export const seasons = [
       { text: "Steamboat Pro Rodeo on weekend nights", tag: "kids" },
       { text: "Float the Yampa on a tube, then ice cream downtown", tag: "kids" },
       {
-        text: "Stroll the river path past the natural mineral springs the town is named for",
+        text: "Stroll the river path through downtown, with the town's historic hot springs nearby",
         tag: "offbeat",
       },
     ],
