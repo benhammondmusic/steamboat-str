@@ -190,6 +190,28 @@ export const yearRound = [
   { text: "Live music on the big stage at the mountain base" },
 ] as const;
 
+/** Counts stay split because the two channels do not pool their reviews. */
+export const reviews = {
+  airbnb: { rating: "4.81", count: "31" },
+  itrip: { count: "8" },
+} as const;
+
+/**
+ * Steamboat bills itself as Bike Town USA. The trail mileage comes from the listing;
+ * everything else is deliberately kept general.
+ */
+export const biking = {
+  heading: "Bike Town USA",
+  note: "Steamboat was a summer resort long before it was a ski town, and the riding is the reason to come back in July.",
+  items: [
+    "Hundreds of miles of single track around the valley, at every skill level",
+    "More than 50 miles of downhill and freeride terrain",
+    "Lift-served laps at the resort bike park, limited access included on the Ikon pass",
+    "The paved path along the Yampa downtown, flat and easy with kids riding along",
+    "SBT GRVL in August, when the gravel scene takes over the whole town",
+  ],
+} as const;
+
 /** Riding the resort gondola up the mountain, which is separate from the neighborhood one. */
 export const gondolaActivities = {
   heading: "Up the resort gondola",
@@ -197,7 +219,7 @@ export const gondolaActivities = {
   items: [
     "Summer sunset happy hour up top, with live music, food and drinks",
     "Hiking, snowshoeing and cross-country trails, well beyond downhill runs",
-    "Mountain biking, with limited bike park access included on the Ikon pass",
+    "Lift-served mountain biking laps down the front of the mountain",
   ],
 } as const;
 

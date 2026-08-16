@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { distances, heroImage, property } from "@/data/property";
+import { distances, heroImage, property, reviews } from "@/data/property";
 
 export function Hero() {
   const { specs, address } = property;
@@ -40,6 +40,16 @@ export function Hero() {
           {property.name} is a top-floor two bedroom at Wildhorse Meadows with air conditioning,
           a washer and dryer in the unit, and a private deck. Built for real ski trips, and close
           enough that Denver and Fort Collins families can come up for three days.
+        </p>
+
+        <p className="mt-6 flex flex-wrap items-center gap-x-2 gap-y-1 text-sm text-snow-200">
+          <span aria-hidden="true" className="text-aspen-400">
+            ★
+          </span>
+          <span>
+            <strong className="font-semibold">{reviews.airbnb.rating}</strong> out of 5 from{" "}
+            {reviews.airbnb.count} reviews on Airbnb, plus {reviews.itrip.count} on iTrip
+          </span>
         </p>
 
         <dl className="mt-10 flex flex-wrap gap-x-10 gap-y-4 text-sm">
