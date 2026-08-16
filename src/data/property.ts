@@ -51,17 +51,17 @@ export const sleeping = [
   {
     room: "Primary bedroom",
     beds: "King bed",
-    note: "En suite bathroom with combo tub and shower. Portable AC unit.",
+    note: "En suite full bathroom with tub and shower. Portable AC unit.",
   },
   {
     room: "Second bedroom",
     beds: "Twin XL over queen bunk, plus a twin XL bunk",
-    note: "Bathroom is across the hall, not attached. Portable AC unit.",
+    note: "Second full bathroom directly across the hall. Portable AC unit.",
   },
   {
     room: "Living area",
     beds: "Queen sleeper sofa",
-    note: "Opens onto the private deck.",
+    note: "Opens straight onto the private deck.",
   },
 ] as const;
 
@@ -74,7 +74,7 @@ export const amenities = [
       "Portable AC units in both bedrooms",
       "High-speed WiFi and streaming on a flat-screen TV",
       "Desk and remote work station",
-      "Private deck with Yampa Valley and Flat Tops views",
+      "Two full bathrooms, one en suite and one off the hall",
       "Hardwood floors, fully furnished, turnkey",
     ],
   },
@@ -93,11 +93,23 @@ export const amenities = [
     items: [
       "Private Wildhorse gondola across the street, winter season only",
       "Free neighborhood shuttle, winter season only",
-      "Oversized private storage for skis and gear",
       "One assigned parking space",
     ],
   },
 ] as const;
+
+/** Called out on its own because it is the feature that sells the top floor. */
+export const deck = {
+  heading: "Your own deck, right off the living room",
+  body: "Top floor means the private deck looks out over the South Valley toward the Flat Tops with nothing in the way. It is where the morning coffee happens, and where somebody always ends up standing after a long day on the mountain.",
+  points: [
+    "Sliding doors straight off the living area",
+    "South Valley, Yampa Valley, and Flat Tops views",
+    "Top floor, so no balcony above you",
+    "Community grills and fire pit are just across the street",
+  ],
+  image: { src: "/images/placeholder-deck.svg", alt: "Private deck with South Valley views" },
+} as const;
 
 /** Approximate driving distances. */
 export const distances = [

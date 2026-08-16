@@ -1,5 +1,6 @@
 import { Amenities } from "@/components/Amenities";
 import { BookingCta } from "@/components/BookingCta";
+import { Deck } from "@/components/Deck";
 import { Footer } from "@/components/Footer";
 import { FrontRange } from "@/components/FrontRange";
 import { Gallery } from "@/components/Gallery";
@@ -20,6 +21,7 @@ export default function Home() {
         <Hero />
         <Gallery />
         <Sleeping />
+        <Deck />
         <SkiSection />
         <FrontRange />
         <Amenities />
