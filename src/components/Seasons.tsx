@@ -11,7 +11,7 @@ export function Seasons() {
     <Section
       id="seasons"
       eyebrow="Year round"
-      title="Five things worth doing, whenever you come"
+      title="Worth doing, whenever you come"
       intro="Steamboat is a ski town first, but the valley earns a visit in all four seasons."
     >
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">

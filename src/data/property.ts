@@ -167,7 +167,7 @@ export const frontRangeWeekend = {
 } as const;
 
 /**
- * Five picks per season, deliberately mixing the obvious with the offbeat.
+ * A handful of picks per season, deliberately mixing the obvious with the offbeat.
  * Verify event names and timing against the current year before publishing.
  */
 export const seasons = [
@@ -176,7 +176,7 @@ export const seasons = [
     window: "Late November through early April",
     picks: [
       {
-        text: "Ski Steamboat, with the neighborhood gondola across the street, and night skiing when you want a late lap",
+        text: "Ski Steamboat, with the neighborhood gondola across the street, plus limited night skiing on select evenings",
       },
       {
         text: "Winter Carnival in February, when they close Lincoln Avenue for the street events, including skiers pulled along behind horses",
@@ -211,6 +211,7 @@ export const seasons = [
       { text: "SBT GRVL, the gravel race that takes over town in August" },
       { text: "The Hot Air Balloon Rodeo, best watched early with coffee", tag: "offbeat" },
       { text: "Steamboat Pro Rodeo on weekend nights", tag: "kids" },
+      { text: "The Steamboat Food and Wine Festival" },
       { text: "Float the Yampa on a tube, then ice cream downtown", tag: "kids" },
       {
         text: "Stroll the river path through downtown, with the town's historic hot springs nearby",
@@ -225,7 +226,10 @@ export const seasons = [
       { text: "Aspens turning on Rabbit Ears Pass, worth the drive up and back" },
       { text: "Elk bugling at dusk in the valley", tag: "offbeat" },
       { text: "Fish Creek Falls and the easy paved overlook stroll, minus the crowds" },
-      { text: "Soak at Strawberry Park Hot Springs once the air turns cold" },
+      {
+        text: "Strawberry Park Hot Springs, natural stone soaking pools up a dirt road rather than a built pool deck",
+        tag: "offbeat",
+      },
       { text: "Little Toots Park and the downtown playgrounds on a warm afternoon", tag: "kids" },
     ],
   },
