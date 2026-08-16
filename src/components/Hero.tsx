@@ -37,8 +37,8 @@ export function Hero() {
           The gondola is across the street. So is the pool.
         </h1>
         <p className="mt-6 max-w-2xl text-lg text-snow-200 sm:text-xl">
-          {property.name} is a top-floor two bedroom at Wildhorse Meadows with a private deck,
-          air conditioning, and a washer and dryer in the unit. Built for real ski trips, and close
+          {property.name} is a top-floor two bedroom at Wildhorse Meadows with air conditioning,
+          a washer and dryer in the unit, and a private deck. Built for real ski trips, and close
           enough that Denver and Fort Collins families can come up for three days.
         </p>
 

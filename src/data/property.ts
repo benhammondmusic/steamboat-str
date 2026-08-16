@@ -61,7 +61,7 @@ export const sleeping = [
   {
     room: "Living area",
     beds: "Queen sleeper sofa",
-    note: "Opens straight onto the private deck.",
+    note: "In the main living space, with the deck just off it.",
   },
 ] as const;
 
@@ -74,6 +74,7 @@ export const amenities = [
       "Portable AC units in both bedrooms",
       "High-speed WiFi and streaming on a flat-screen TV",
       "Desk and remote work station",
+      "Private deck off the living room",
       "Two full bathrooms, one en suite and one off the hall",
       "Hardwood floors, fully furnished, turnkey",
     ],
@@ -97,19 +98,6 @@ export const amenities = [
     ],
   },
 ] as const;
-
-/** Called out on its own because it is the feature that sells the top floor. */
-export const deck = {
-  heading: "Your own deck, right off the living room",
-  body: "Top floor means the private deck looks out over the South Valley toward the Flat Tops with nothing in the way. It is where the morning coffee happens, and where somebody always ends up standing after a long day on the mountain.",
-  points: [
-    "Sliding doors straight off the living area",
-    "South Valley, Yampa Valley, and Flat Tops views",
-    "Top floor, so no balcony above you",
-    "Community grills and fire pit are just across the street",
-  ],
-  image: { src: "/images/placeholder-deck.svg", alt: "Private deck with South Valley views" },
-} as const;
 
 /** Approximate driving distances. */
 export const distances = [
@@ -207,7 +195,7 @@ export const gallery = [
   { src: "/images/placeholder-kitchen.svg", alt: "Modern kitchen with quartz counters" },
   { src: "/images/placeholder-bedroom.svg", alt: "Primary bedroom with king bed" },
   { src: "/images/placeholder-bunks.svg", alt: "Second bedroom with bunk beds" },
-  { src: "/images/placeholder-deck.svg", alt: "Private deck with valley views" },
+  { src: "/images/placeholder-deck.svg", alt: "Private deck off the living room" },
   { src: "/images/placeholder-pool.svg", alt: "Heated pool and hot tubs at Trailhead Lodge" },
   { src: "/images/placeholder-gondola.svg", alt: "Private Wildhorse gondola across the street" },
   { src: "/images/placeholder-exterior.svg", alt: "First Tracks building exterior in winter" },
