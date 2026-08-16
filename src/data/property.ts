@@ -166,6 +166,18 @@ export const frontRangeWeekend = {
   ],
 } as const;
 
+/** Open in every season, so they sit outside the seasonal cards. */
+export const yearRound = [
+  { text: "Old Town Hot Springs downtown, with waterslides", tag: "kids" },
+  {
+    text: "Strawberry Park Hot Springs, natural stone pools up a dirt road. Family friendly by day, clothing optional after dark.",
+    tag: "offbeat",
+  },
+  { text: "Arcade games at Steamboat Fun and Games", tag: "kids" },
+  { text: "Live music at Schmiggity's downtown" },
+  { text: "Live music on the big stage at the mountain base" },
+] as const;
+
 /**
  * Five picks per season, deliberately mixing the obvious with the offbeat.
  * Verify event names and timing against the current year before publishing.
@@ -186,7 +198,7 @@ export const seasons = [
         text: "Snow tubing and skiing at Howelsen Hill, Colorado's oldest continuously operating ski area, with free skiing on Sundays",
         tag: "kids",
       },
-      { text: "Old Town Hot Springs downtown, with waterslides", tag: "kids" },
+      { text: "Skating rink at the mountain base", tag: "kids" },
       { text: "Snowshoe or nordic ski the trails up on Rabbit Ears Pass" },
     ],
   },
@@ -208,10 +220,15 @@ export const seasons = [
     season: "Summer",
     window: "June through August",
     picks: [
-      { text: "SBT GRVL, the gravel race that takes over town in August" },
+      {
+        text: "The big ones: SBT GRVL, the gravel race that takes over town, and the Steamboat Food and Wine Festival",
+      },
       { text: "The Hot Air Balloon Rodeo, best watched early with coffee", tag: "offbeat" },
-      { text: "Steamboat Pro Rodeo on weekend nights", tag: "kids" },
-      { text: "The Steamboat Food and Wine Festival" },
+      { text: "Steamboat Pro Rodeo on weekend nights" },
+      {
+        text: "The base area beach and rocky stream for dipping your feet, plus a bounce house and yard games",
+        tag: "kids",
+      },
       {
         text: "Float the Yampa on a tube, then ice cream and a stroll along the downtown river path",
         tag: "kids",
@@ -225,10 +242,7 @@ export const seasons = [
       { text: "Aspens turning on Rabbit Ears Pass, worth the drive up and back" },
       { text: "Elk bugling at dusk in the valley", tag: "offbeat" },
       { text: "Fish Creek Falls and the easy paved overlook stroll, minus the crowds" },
-      {
-        text: "Strawberry Park Hot Springs, natural stone pools up a dirt road. Family friendly by day, clothing optional after dark.",
-        tag: "offbeat",
-      },
+      { text: "Hike or bike Emerald Mountain right above downtown" },
       { text: "Little Toots Park and the downtown playgrounds on a warm afternoon", tag: "kids" },
     ],
   },
