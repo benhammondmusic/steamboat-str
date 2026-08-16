@@ -39,7 +39,7 @@ export const property = {
     phone: TODO,
   },
   rates: {
-    note: "Rates move with the season and the snow. Check live availability and pricing on the booking page.",
+    note: "Rates change by season. Live availability and pricing are on the booking sites.",
     winterNightlyFrom: TODO,
     summerNightlyFrom: TODO,
     minimumStayNights: TODO,
@@ -134,47 +134,32 @@ export const distances = [
 
 export const skiHighlights = [
   {
-    title: "The gondola is across the street",
-    body: "Wildhorse Meadows has its own private gondola running through ski season, and it drops you at the Steamboat base area. No shuttle roulette, no parking lot hike in ski boots.",
+    title: "Gondola across the street",
+    body: "Wildhorse Meadows has its own gondola through ski season, and it drops at the Steamboat base area.",
   },
   {
     title: "Champagne Powder",
-    body: "Steamboat trademarked the term for a reason. The dry, light snow that falls here skis differently than anywhere else in Colorado.",
+    body: "Steamboat holds the trademark on the term. The snow here falls dry and light.",
   },
   {
-    title: "Terrain for every level",
-    body: "Roughly 3,000 acres across six peaks, from wide beginner greens off the gondola to the aspen glades locals guard closely.",
+    title: "Six peaks, about 3,000 acres",
+    body: "Beginner greens come off the gondola, and there is tree skiing across the mountain.",
   },
   {
-    title: "Three hot tubs and a heated pool",
-    body: "Trailhead Lodge is directly across the street. Soak with mountain views, then let the kids burn off whatever is left in the game room.",
+    title: "Two ski areas in town",
+    body: "Steamboat Resort, plus Howelsen Hill downtown, the oldest continuously operating ski area in Colorado.",
   },
 ] as const;
 
 export const frontRangeWeekend = {
-  heading: "Close enough for a long weekend",
-  body: "Steamboat is the rare mountain town that is genuinely doable Friday to Sunday from the Front Range. No red-eye, no connecting flight, no full vacation day burned in transit.",
-  itinerary: [
-    {
-      when: "Friday evening",
-      what: "Leave after school or after work, check in any time after 4pm, unpack once.",
-    },
-    {
-      when: "Saturday",
-      what: "Gondola across the street to first chair, lunch on the mountain, then the hot tubs at Trailhead while the kids take over the game room.",
-    },
-    {
-      when: "Sunday",
-      what: "Half day on the hill, lunch downtown on Lincoln Avenue, home before bedtime.",
-    },
-  ],
+  heading: "Friday to Sunday from the Front Range",
   familyNotes: [
-    "A real bunk room: twin XL over queen plus a twin XL bunk, so the kids get their own space.",
-    "Full kitchen means breakfast happens here instead of a $90 restaurant stop.",
+    "A bunk room with a queen and three twin XLs, so the kids get their own space.",
+    "Full kitchen, so breakfast happens here.",
     "Washer and dryer in the unit, so one set of ski clothes is enough.",
-    "Pack n Play, toys and plastic dishes are already here, so the car is a little emptier.",
-    "Top floor with no one stomping overhead at 6am.",
-    "Summer works too, and the pool is heated year round.",
+    "Pack n Play, toys and plastic dishes already here.",
+    "Top floor, so nobody is stomping overhead at 6am.",
+    "The pool across the street is heated year round.",
   ],
 } as const;
 
@@ -201,14 +186,14 @@ export const reviews = {
  * everything else is deliberately kept general.
  */
 export const biking = {
-  heading: "Bike Town USA",
-  note: "Steamboat was a summer resort long before it was a ski town, and the riding is the reason to come back in July.",
+  heading: "Biking",
+  note: "Steamboat calls itself Bike Town USA.",
   items: [
-    "Hundreds of miles of single track around the valley, at every skill level",
+    "Hundreds of miles of single track around the valley",
     "More than 50 miles of downhill and freeride terrain",
-    "Lift-served laps at the resort bike park, limited access included on the Ikon pass",
-    "The paved path along the Yampa downtown, flat and easy with kids riding along",
-    "SBT GRVL in August, when the gravel scene takes over the whole town",
+    "Lift-served laps at the resort bike park, limited access on the Ikon pass",
+    "The paved Yampa path downtown, flat enough for kids",
+    "SBT GRVL, the gravel race, in August",
   ],
 } as const;
 
@@ -218,8 +203,8 @@ export const gondolaActivities = {
   note: "Each of these needs a lift ticket or a season pass.",
   items: [
     "Summer sunset happy hour up top, with live music, food and drinks",
-    "Hiking, snowshoeing and cross-country trails, well beyond downhill runs",
-    "Lift-served mountain biking laps down the front of the mountain",
+    "Hiking, snowshoe and cross-country trails",
+    "Lift-served mountain biking",
   ],
 } as const;
 

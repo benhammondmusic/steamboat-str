@@ -4,17 +4,12 @@ import { Section } from "./Section";
 
 export function Gallery() {
   return (
-    <Section
-      id="gallery"
-      eyebrow="The place"
-      title="Room to spread out after a full day on the hill"
-      intro="Photos are placeholders. Drop real images into public/images using the same filenames and they appear here automatically."
-    >
+    <Section id="gallery" title="Photos" intro="Placeholders until the real photos are in.">
       <ul className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {gallery.map((image) => (
           <li
             key={image.src}
-            className="relative aspect-4/3 overflow-hidden rounded-xl bg-snow-100 ring-1 ring-snow-200"
+            className="relative aspect-4/3 overflow-hidden rounded-md bg-snow-100"
           >
             <Image
               src={image.src}

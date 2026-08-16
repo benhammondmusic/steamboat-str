@@ -9,24 +9,23 @@ export function Location() {
   return (
     <Section
       id="location"
-      eyebrow="Getting here"
-      title="Steamboat is closer than you think"
-      intro="Drive times are approximate and assume decent roads. Give yourself extra over Rabbit Ears in a storm."
+      title="Getting here"
+      intro="Drive times are approximate. Give yourself extra over Rabbit Ears in a storm."
     >
-      <ul className="grid gap-4 sm:grid-cols-3">
+      <ul className="grid gap-8 sm:grid-cols-3">
         {distances.map((entry) => (
-          <li key={entry.from} className="rounded-xl bg-white p-6 ring-1 ring-snow-200">
-            <p className="font-display text-lg font-semibold text-pine-700">{entry.from}</p>
-            <p className="mt-2 text-2xl font-semibold">{entry.driveTime}</p>
+          <li key={entry.from} className="border-t border-snow-200 pt-4">
+            <p className="text-sm font-semibold text-pine-700">{entry.from}</p>
+            <p className="mt-1 font-display text-2xl font-semibold">{entry.driveTime}</p>
             <p className="text-sm text-ink/60">{entry.miles} miles</p>
-            <p className="mt-3 text-sm text-ink/70">{entry.note}</p>
+            <p className="mt-2 text-sm text-ink/70">{entry.note}</p>
           </li>
         ))}
       </ul>
 
-      <div className="mt-8 rounded-xl bg-white p-6 ring-1 ring-snow-200">
-        <h3 className="font-display text-lg font-semibold text-pine-700">Address</h3>
-        <address className="mt-2 not-italic text-ink/80">
+      <div className="mt-12 border-t border-snow-200 pt-4">
+        <h3 className="text-sm font-semibold text-pine-700">Address</h3>
+        <address className="mt-1 not-italic text-ink/80">
           {address.street} {address.unit}
           <br />
           {address.city}, {address.state} {address.zip}

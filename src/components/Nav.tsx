@@ -3,10 +3,10 @@ import { property } from "@/data/property";
 const links = [
   { href: "#gallery", label: "Photos" },
   { href: "#sleeping", label: "Sleeping" },
-  { href: "#ski", label: "Ski trips" },
-  { href: "#weekend", label: "Long weekends" },
+  { href: "#ski", label: "Skiing" },
+  { href: "#weekend", label: "Weekends" },
   { href: "#amenities", label: "Amenities" },
-  { href: "#seasons", label: "Seasons" },
+  { href: "#seasons", label: "Things to do" },
   { href: "#location", label: "Getting here" },
 ];
 
@@ -31,7 +31,7 @@ export function Nav() {
         </ul>
         <a
           href="#book"
-          className="rounded-full bg-pine-700 px-4 py-2 text-sm font-semibold text-white transition hover:bg-pine-900"
+          className="rounded-md bg-pine-700 px-4 py-2 text-sm font-semibold text-white transition hover:bg-pine-900"
         >
           Check dates
         </a>
