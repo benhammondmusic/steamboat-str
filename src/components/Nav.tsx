@@ -6,6 +6,7 @@ const links = [
   { href: "#ski", label: "Ski trips" },
   { href: "#weekend", label: "Long weekends" },
   { href: "#amenities", label: "Amenities" },
+  { href: "#seasons", label: "Seasons" },
   { href: "#location", label: "Getting here" },
 ];
 

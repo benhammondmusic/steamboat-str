@@ -1,4 +1,4 @@
-import { amenities, summerHighlights } from "@/data/property";
+import { amenities } from "@/data/property";
 import { Section } from "./Section";
 
 export function Amenities() {
@@ -28,21 +28,10 @@ export function Amenities() {
         ))}
       </div>
 
-      <div className="mt-14 rounded-xl bg-pine-50 p-6 ring-1 ring-pine-200">
-        <h3 className="font-display text-xl font-semibold text-pine-700">Not just a winter town</h3>
-        <p className="mt-2 text-ink/70">
-          Summer rates run lower and the pool is heated year round. Note that the gondola and the
-          neighborhood shuttle run in ski season only.
-        </p>
-        <ul className="mt-5 grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
-          {summerHighlights.map((item) => (
-            <li key={item} className="flex gap-3 text-ink/80">
-              <span aria-hidden="true" className="mt-2 size-1.5 shrink-0 rounded-full bg-pine-500" />
-              {item}
-            </li>
-          ))}
-        </ul>
-      </div>
+      <p className="mt-10 rounded-xl bg-pine-50 p-6 text-ink/70 ring-1 ring-pine-200">
+        The pool is heated year round. The gondola and the neighborhood shuttle run in ski season
+        only.
+      </p>
     </Section>
   );
 }

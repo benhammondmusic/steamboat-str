@@ -166,13 +166,67 @@ export const frontRangeWeekend = {
   ],
 } as const;
 
-export const summerHighlights = [
-  "Tubing and fly fishing on the Yampa River",
-  "Lift-served mountain biking at the bike park",
-  "The hike to Fish Creek Falls",
-  "Saturday farmers market on Lincoln Avenue",
-  "Steamboat Pro Rodeo on summer weekends",
-  "Strawberry Park Hot Springs up the valley",
+/**
+ * Five picks per season, deliberately mixing the obvious with the offbeat.
+ * Verify event names and timing against the current year before publishing.
+ */
+export const seasons = [
+  {
+    season: "Winter",
+    window: "Late November through early April",
+    picks: [
+      { text: "Ski Steamboat, with the neighborhood gondola across the street" },
+      {
+        text: "Winter Carnival in February, when they close Lincoln Avenue and tow skiers down Main Street behind horses",
+        tag: "offbeat",
+      },
+      {
+        text: "Night skiing and tubing at Howelsen Hill, the oldest ski area in Colorado",
+        tag: "kids",
+      },
+      { text: "Old Town Hot Springs downtown, with waterslides", tag: "kids" },
+      { text: "Snowshoe or nordic ski the trails up on Rabbit Ears Pass" },
+    ],
+  },
+  {
+    season: "Spring",
+    window: "April and May",
+    picks: [
+      { text: "Slushy spring laps and closing weekend on the mountain" },
+      {
+        text: "The Cardboard Classic, where people race homemade cardboard sleds down the hill",
+        tag: "offbeat",
+      },
+      { text: "Fish Creek Falls running hard on snowmelt" },
+      { text: "The Yampa comes up and the kayakers take over the river park" },
+      { text: "Mud season quiet, the lowest rates, and no lift lines anywhere" },
+    ],
+  },
+  {
+    season: "Summer",
+    window: "June through August",
+    picks: [
+      { text: "SBT GRVL, the gravel race that takes over town in August" },
+      { text: "The Hot Air Balloon Rodeo, best watched early with coffee", tag: "offbeat" },
+      { text: "Steamboat Pro Rodeo on weekend nights", tag: "kids" },
+      { text: "Float the Yampa on a tube, then ice cream downtown", tag: "kids" },
+      {
+        text: "Stroll the river path past the natural mineral springs the town is named for",
+        tag: "offbeat",
+      },
+    ],
+  },
+  {
+    season: "Fall",
+    window: "September and October",
+    picks: [
+      { text: "Aspens turning on Rabbit Ears Pass, worth the drive up and back" },
+      { text: "Elk bugling at dusk in the valley", tag: "offbeat" },
+      { text: "Fish Creek Falls and the easy paved overlook stroll, minus the crowds" },
+      { text: "Soak at Strawberry Park Hot Springs once the air turns cold" },
+      { text: "Little Toots Park and the downtown playgrounds on a warm afternoon", tag: "kids" },
+    ],
+  },
 ] as const;
 
 export const houseRules = [

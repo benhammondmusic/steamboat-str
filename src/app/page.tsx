@@ -7,6 +7,7 @@ import { Hero } from "@/components/Hero";
 import { HouseRules } from "@/components/HouseRules";
 import { Location } from "@/components/Location";
 import { Nav } from "@/components/Nav";
+import { Seasons } from "@/components/Seasons";
 import { SkiSection } from "@/components/SkiSection";
 import { Sleeping } from "@/components/Sleeping";
 import { StructuredData } from "@/components/StructuredData";
@@ -23,6 +24,7 @@ export default function Home() {
         <SkiSection />
         <FrontRange />
         <Amenities />
+        <Seasons />
         <Location />
         <HouseRules />
         <BookingCta />

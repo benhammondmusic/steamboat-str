@@ -6,8 +6,7 @@ export function Sleeping() {
     <Section
       id="sleeping"
       eyebrow="Where everyone sleeps"
-      title={`Beds for a full group, capped at ${property.specs.sleeps} guests`}
-      intro="There are more beds than the permitted occupancy, so you have room to arrange the group how you want within the limit."
+      title={`Two bedrooms, sleeps ${property.specs.sleeps}`}
     >
       <ul className="grid gap-4 sm:grid-cols-3">
         {sleeping.map((room) => (
