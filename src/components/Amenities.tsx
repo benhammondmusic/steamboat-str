@@ -9,7 +9,7 @@ export function Amenities() {
       title="Turnkey in the unit, resort amenities across the street"
       intro="The pool, hot tubs, gym, and game room belong to Trailhead Lodge directly across the street, and guests here have access."
     >
-      <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="grid gap-8 sm:grid-cols-2">
         {amenities.map((group) => (
           <div key={group.category} className="rounded-xl bg-white p-6 ring-1 ring-snow-200">
             <h3 className="font-display text-lg font-semibold text-pine-700">{group.category}</h3>

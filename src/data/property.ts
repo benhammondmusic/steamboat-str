@@ -51,12 +51,12 @@ export const sleeping = [
   {
     room: "Primary bedroom",
     beds: "King bed",
-    note: "En suite full bathroom with tub and shower. Portable AC unit.",
+    note: "En suite full bathroom with a tub and shower combo. Its own flat screen TV, a dresser and two closets. Portable AC unit and a ceiling fan.",
   },
   {
     room: "Second bedroom",
     beds: "Twin XL over queen bunk, plus a twin XL bunk",
-    note: "Second full bathroom directly across the hall. Portable AC unit.",
+    note: "One queen and three twin XL beds, with two closets. Second full bathroom directly across the hall, also a tub and shower combo. Portable AC unit and a ceiling fan.",
   },
   {
     room: "Living area",
@@ -69,32 +69,43 @@ export const amenities = [
   {
     category: "In the condo",
     items: [
-      "Full kitchen with stainless appliances and quartz counters",
+      "Full kitchen with stainless appliances, quartz counters and bar seating",
       "Washer and dryer in unit",
-      "Portable AC units in both bedrooms",
-      "High-speed WiFi and streaming on a flat-screen TV",
-      "Desk and remote work station",
-      "Private deck off the living room",
-      "Two full bathrooms, one en suite and one off the hall",
+      "Portable AC units in both bedrooms, rare in Steamboat, plus ceiling fans throughout",
+      "High-speed WiFi and streaming on a large flat-screen TV",
+      "Desk and remote work station in the hallway nook",
+      "Entry drop zone with cubbies, hooks and a bench",
+      "Private deck off the living room, with partial views toward the Flat Tops and the Yampa Valley",
+      "Two full bathrooms, one en suite and one off the hall, both tub and shower combos",
       "Hardwood floors, fully furnished, turnkey",
+    ],
+  },
+  {
+    category: "Traveling with a baby",
+    items: [
+      "Pack n Play with a mattress",
+      "Toys for the little ones",
+      "Plastic dishes, mixing bowls and a mixing spoon",
     ],
   },
   {
     category: "Across the street at Trailhead Lodge",
     items: [
       "Large heated pool, open year round",
-      "Three rocky-mountain-style hot tubs",
-      "Fitness center",
+      "Three rocky-mountain-style hot tubs, all with mountain views",
+      "State of the art fitness center",
       "Game room with pool table and foosball",
-      "Community grills and fire pit",
+      "Community grilling area with two large gas grills and a fire pit",
     ],
   },
   {
-    category: "Getting to the mountain",
+    category: "Getting around",
     items: [
       "Private Wildhorse gondola across the street, winter season only",
       "Free neighborhood shuttle, winter season only",
-      "One assigned parking space",
+      "One assigned parking space in the lot outside the unit",
+      "Three miles from downtown Steamboat",
+      "Two minute walk to the Steamboat Tennis and Pickleball Center",
     ],
   },
 ] as const;
@@ -161,6 +172,7 @@ export const frontRangeWeekend = {
     "A real bunk room: twin XL over queen plus a twin XL bunk, so the kids get their own space.",
     "Full kitchen means breakfast happens here instead of a $90 restaurant stop.",
     "Washer and dryer in the unit, so one set of ski clothes is enough.",
+    "Pack n Play, toys and plastic dishes are already here, so the car is a little emptier.",
     "Top floor with no one stomping overhead at 6am.",
     "Summer works too, and the pool is heated year round.",
   ],
