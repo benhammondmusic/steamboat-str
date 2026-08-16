@@ -15,8 +15,9 @@ export function Hero() {
         fill
         priority
         sizes="100vw"
-        className="object-cover opacity-45"
+        className="object-cover opacity-25"
       />
+      <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-t from-pine-900 via-pine-900/40 to-transparent" />
       <div className="relative mx-auto max-w-6xl px-5 py-24 sm:py-32">
         <p className="text-sm font-semibold tracking-widest text-aspen-400 uppercase">
           {address.city}, {address.state}

@@ -14,9 +14,9 @@ export function FrontRange() {
           {frontRangeWeekend.itinerary.map((entry) => (
             <li
               key={entry.when}
-              className="flex gap-5 rounded-xl bg-white p-5 ring-1 ring-snow-200"
+              className="flex flex-col gap-2 rounded-xl bg-white p-5 ring-1 ring-snow-200 sm:flex-row sm:gap-5"
             >
-              <span className="w-32 shrink-0 text-sm font-semibold text-pine-500">
+              <span className="text-sm font-semibold text-pine-500 sm:w-32 sm:shrink-0">
                 {entry.when}
               </span>
               <span className="text-ink/80">{entry.what}</span>
