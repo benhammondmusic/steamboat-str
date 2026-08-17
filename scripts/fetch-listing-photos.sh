@@ -16,6 +16,10 @@ TMP="$(mktemp -d)"
 trap 'rm -rf "$TMP"' EXIT
 
 # output-name <TAB> source-file-on-cdn <TAB> optional crop against the 1600px source
+#
+# Everything except the winter-* entries is a photo of this unit or of Wildhorse
+# Meadows. The winter-* files are iTrip's generic Steamboat destination stock, so
+# the site renders them in their own labelled block, never alongside the unit.
 MANIFEST=$(
   cat <<'EOF'
 hero	wild_horse_2.1693406594.jpg
@@ -34,6 +38,9 @@ pool	pool_57.1693406592.jpg
 hot-tubs	hot_tubs1_2.1693406585.jpg
 pool-aerial	wild_horse1_2.1693406593.jpg
 game-room	game_room_12.1693406581.jpg
+winter-powder	steamboatrealtyphotosteamboat-8966.1537366233.jpg
+winter-trees	steamboatrealtyphotosteamboat-8953.1537366118.jpg
+winter-resort	steamboatrealtyphotosteamboat-9015.1537366752.jpg
 EOF
 )
 

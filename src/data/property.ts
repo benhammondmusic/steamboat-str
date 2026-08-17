@@ -313,6 +313,20 @@ export const gallery = [
   { src: "/images/game-room.jpg", alt: "Game room with a pool table and foosball" },
 ] as const;
 
+/**
+ * Not this condo. Generic Steamboat photos, kept in their own labelled block so
+ * nobody reads them as the view from the deck. Replace with our own winter shots.
+ */
+export const areaGallery = {
+  heading: "Steamboat in winter",
+  note: "Photos of the mountain, not of the condo. Our own winter photos are still to come.",
+  images: [
+    { src: "/images/winter-powder.jpg", alt: "A skier turning through deep snow" },
+    { src: "/images/winter-trees.jpg", alt: "A snowboarder in an aspen glade" },
+    { src: "/images/winter-resort.jpg", alt: "Steamboat Resort and the base area under snow" },
+  ],
+} as const;
+
 export const heroImage = {
   src: "/images/hero.jpg",
   alt: "Wildhorse Meadows from the air in summer, mountains behind",
