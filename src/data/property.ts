@@ -286,21 +286,34 @@ export const houseRules = [
 ] as const;
 
 /**
- * Placeholder gallery. Drop real photos into /public/images with these filenames
- * and the site picks them up with no code changes.
+ * Listing photos, pulled from iTrip by scripts/fetch-listing-photos.sh.
+ * All of them were shot in summer. Winter shots are still missing.
  */
 export const gallery = [
-  { src: "/images/placeholder-living.svg", alt: "Living area with sofa and club chairs" },
-  { src: "/images/placeholder-kitchen.svg", alt: "Modern kitchen with quartz counters" },
-  { src: "/images/placeholder-bedroom.svg", alt: "Primary bedroom with king bed" },
-  { src: "/images/placeholder-bunks.svg", alt: "Second bedroom with bunk beds" },
-  { src: "/images/placeholder-deck.svg", alt: "Private deck off the living room" },
-  { src: "/images/placeholder-pool.svg", alt: "Heated pool and hot tubs at Trailhead Lodge" },
-  { src: "/images/placeholder-gondola.svg", alt: "Wildhorse gondola across the street" },
-  { src: "/images/placeholder-exterior.svg", alt: "First Tracks building exterior in winter" },
+  { src: "/images/living.jpg", alt: "Living area with a sofa and club chairs, kitchen beyond" },
+  {
+    src: "/images/kitchen.jpg",
+    alt: "Kitchen with quartz counters, stainless appliances and bar seating",
+  },
+  { src: "/images/bedroom.jpg", alt: "Primary bedroom with a king bed" },
+  { src: "/images/bunks.jpg", alt: "Second bedroom with two sets of bunks" },
+  { src: "/images/bathroom.jpg", alt: "One of the two full bathrooms" },
+  { src: "/images/laundry.jpg", alt: "Washer and dryer in the unit" },
+  { src: "/images/deck.jpg", alt: "Deck off the living room with two chairs" },
+  { src: "/images/entry.jpg", alt: "Entry drop zone with cubbies and hooks, and the desk nook" },
+  { src: "/images/exterior.jpg", alt: "The building from the parking lot" },
+  { src: "/images/neighborhood.jpg", alt: "Wildhorse Meadows from the air in summer" },
+  {
+    src: "/images/gondola.jpg",
+    alt: "The Wildhorse gondola station, with its cable running up toward the mountain",
+  },
+  { src: "/images/pool.jpg", alt: "Heated pool at Trailhead Lodge across the street" },
+  { src: "/images/hot-tubs.jpg", alt: "Hot tubs at Trailhead Lodge, looking out at the mountains" },
+  { src: "/images/pool-aerial.jpg", alt: "The pool and all three hot tubs from above" },
+  { src: "/images/game-room.jpg", alt: "Game room with a pool table and foosball" },
 ] as const;
 
 export const heroImage = {
-  src: "/images/placeholder-hero.svg",
-  alt: "Steamboat Springs in winter",
+  src: "/images/hero.jpg",
+  alt: "Wildhorse Meadows from the air in summer, mountains behind",
 } as const;

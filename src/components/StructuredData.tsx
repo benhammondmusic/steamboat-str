@@ -1,4 +1,4 @@
-import { amenities, property } from "@/data/property";
+import { amenities, gallery, heroImage, property } from "@/data/property";
 
 export function StructuredData() {
   const { address, specs } = property;
@@ -9,6 +9,7 @@ export function StructuredData() {
     name: property.name,
     description: property.tagline,
     url: property.booking.itrip,
+    image: [heroImage.src, ...gallery.slice(0, 5).map((image) => image.src)],
     address: {
       "@type": "PostalAddress",
       streetAddress: `${address.street} ${address.unit}`,

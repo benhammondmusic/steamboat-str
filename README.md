@@ -22,23 +22,24 @@ the MLS record for unit 4306. Anything still set to `TODO` renders as a loud amb
 badge on the page, so unfilled fields are obvious in review rather than silently
 shipping as blanks. Still open:
 
-- `booking.airbnb` and `booking.vrbo` (iTrip is wired up already)
-- `booking.email` and `booking.phone`
-- `rates` (nightly floors and minimum stay)
+- `booking.vrbo` (iTrip and Airbnb are wired up already)
 
 Drive times are approximate. The Steamboat area copy (skiable acreage, summer
 activities) is general knowledge rather than listing fact, so give it a read before
 launch.
 
-**Photos** live in `public/images`. The gallery reads filenames from the `gallery`
-array in `property.ts`, so replacing a placeholder is just dropping a real photo at
-the same path. To regenerate the placeholder art:
+**Photos** live in `public/images` and come from the iTrip listing:
 
 ```bash
-npm run placeholders
+./scripts/fetch-listing-photos.sh
 ```
+
+The script holds the mapping from iTrip's filenames to ours, and resizes for the
+web. Every current photo was shot in summer. The gallery reads paths from the
+`gallery` array in `property.ts`.
 
 ## Deploy
 
-Netlify picks up `netlify.toml` and the Next.js runtime plugin. Connect the repo in
-the Netlify dashboard, no build settings to configure by hand.
+Netlify builds from `netlify.toml` on every push to `main`. The site is a static
+export (`output: "export"`, published from `out`), because Netlify's Next runtime
+does not support Next 16.

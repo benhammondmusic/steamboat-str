@@ -23,11 +23,16 @@ export function Hero() {
         fill
         priority
         sizes="100vw"
-        className="object-cover opacity-25"
+        className="object-cover"
+      />
+      {/* Scrims keep the headline legible while the right side of the photo stays visible. */}
+      <div
+        aria-hidden="true"
+        className="absolute inset-0 bg-gradient-to-r from-pine-900 via-pine-900/80 to-pine-900/20"
       />
       <div
         aria-hidden="true"
-        className="absolute inset-0 bg-gradient-to-t from-pine-900 via-pine-900/40 to-transparent"
+        className="absolute inset-0 bg-gradient-to-t from-pine-900 via-transparent to-pine-900/50"
       />
       <div className="relative mx-auto max-w-6xl px-5 py-24 sm:py-32">
         <p className="text-sm text-snow-200">
