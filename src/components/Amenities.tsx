@@ -28,8 +28,8 @@ export function Amenities() {
       </div>
 
       <p className="mt-10 text-sm text-ink/60">
-        The pool is heated year round. The gondola and the neighborhood shuttle run in ski season
-        only.
+        The pool is heated year round. The neighborhood shuttle runs in ski season only, and the
+        gondola runs in ski season plus the occasional summer and fall event.
       </p>
     </Section>
   );

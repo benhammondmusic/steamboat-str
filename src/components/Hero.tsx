@@ -34,11 +34,11 @@ export function Hero() {
           {address.subdivision}, {address.city} {address.state}
         </p>
         <h1 className="mt-3 max-w-3xl font-display text-4xl leading-tight font-semibold text-balance sm:text-6xl">
-          The gondola is across the street. So is the pool.
+          Year-round heated pool and hot tubs plus priority gondola access, just across the street.
         </h1>
         <p className="mt-5 max-w-2xl text-lg text-snow-200">
-          Top-floor two bedroom at Wildhorse Meadows. Two full baths, a washer and dryer in the
-          unit, AC in both bedrooms, and a deck off the living room.
+          Top-floor two bedroom with two full baths, a washer and dryer in the unit, AC in both
+          bedrooms, and a deck off the living room.
         </p>
 
         <p className="mt-5 text-sm text-snow-200">

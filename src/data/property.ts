@@ -101,7 +101,7 @@ export const amenities = [
   {
     category: "Getting around",
     items: [
-      "Private Wildhorse gondola across the street, winter season only",
+      "Wildhorse gondola across the street to the mountain base, ski season plus the occasional summer and fall event, with a separate owner and guest line when it backs up",
       "Free neighborhood shuttle, winter season only",
       "One assigned parking space in the lot outside the unit",
       "Three miles from downtown Steamboat",
@@ -135,7 +135,7 @@ export const distances = [
 export const skiHighlights = [
   {
     title: "Gondola across the street",
-    body: "Wildhorse Meadows has its own gondola through ski season, and it drops at the Steamboat base area.",
+    body: "The Wildhorse gondola is a small one that connects the neighborhood to the Steamboat base area, where you pick up the mountain gondola or a chair. It is open to the public, but owners and guests get their own line when it backs up.",
   },
   {
     title: "Champagne Powder",
@@ -300,7 +300,7 @@ export const gallery = [
   { src: "/images/placeholder-bunks.svg", alt: "Second bedroom with bunk beds" },
   { src: "/images/placeholder-deck.svg", alt: "Private deck off the living room" },
   { src: "/images/placeholder-pool.svg", alt: "Heated pool and hot tubs at Trailhead Lodge" },
-  { src: "/images/placeholder-gondola.svg", alt: "Private Wildhorse gondola across the street" },
+  { src: "/images/placeholder-gondola.svg", alt: "Wildhorse gondola across the street" },
   { src: "/images/placeholder-exterior.svg", alt: "First Tracks building exterior in winter" },
 ] as const;
 

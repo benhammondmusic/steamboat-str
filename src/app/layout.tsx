@@ -15,7 +15,7 @@ const fraunces = Fraunces({
 
 const title = `${property.name} | ${property.tagline}`;
 const description =
-  "Top-floor 2 bedroom condo at Wildhorse Meadows in Steamboat Springs. Private gondola to the ski base across the street, heated pool and three hot tubs, AC, and in-unit laundry. Sleeps 6.";
+  "Top-floor 2 bedroom condo at Wildhorse Meadows in Steamboat Springs. Seasonal gondola to the base across the street, year-round heated pool and three hot tubs, AC, and in-unit laundry. Sleeps 6.";
 
 export const metadata: Metadata = {
   title,
