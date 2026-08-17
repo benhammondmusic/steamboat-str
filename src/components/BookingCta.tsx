@@ -1,5 +1,5 @@
 import { property } from "@/data/property";
-import { Todo, isTodo } from "./Todo";
+import { isTodo } from "./Todo";
 
 const channels = [
   { key: "itrip", label: "Check dates and book" },
@@ -35,28 +35,13 @@ export function BookingCta() {
           ))}
         </div>
 
-        <div className="mt-8 space-y-2 text-snow-200">
-          <p>
-            Email:{" "}
-            {isTodo(booking.email) ? (
-              <Todo label="contact email" />
-            ) : (
-              <a className="underline underline-offset-4" href={`mailto:${booking.email}`}>
-                {booking.email}
-              </a>
-            )}
-          </p>
-          <p>
-            Phone:{" "}
-            {isTodo(booking.phone) ? (
-              <Todo label="contact phone" />
-            ) : (
-              <a className="underline underline-offset-4" href={`tel:${booking.phone}`}>
-                {booking.phone}
-              </a>
-            )}
-          </p>
-        </div>
+        <p className="mt-8 text-snow-200">
+          Questions about the condo or the neighborhood? Email{" "}
+          <a className="underline underline-offset-4" href={`mailto:${booking.email}`}>
+            {booking.email}
+          </a>
+          .
+        </p>
       </div>
     </section>
   );

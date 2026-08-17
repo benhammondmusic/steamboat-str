@@ -35,14 +35,10 @@ export const property = {
       "https://www.itrip.net/steamboat-springs-vacation-rental/first-tracks-4306-at-wildhorse-meadows",
     airbnb: "https://www.airbnb.com/rooms/937781387600503303",
     vrbo: TODO,
-    email: TODO,
-    phone: TODO,
+    email: "benjamin.hammond@gmail.com",
   },
   rates: {
-    note: "Rates change by season. Live availability and pricing are on the booking sites.",
-    winterNightlyFrom: TODO,
-    summerNightlyFrom: TODO,
-    minimumStayNights: TODO,
+    note: "Rates and minimum stays change by season. Live availability and pricing are on iTrip.",
   },
 } as const;
 
